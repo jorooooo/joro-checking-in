@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Style for the floating text */
+  .floating-text {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px; /* Slightly bigger font size */
+    display: none; /* Initially hidden */
+  }
+</style>
+<script>
+  // Show the floating text when the page loads
+  window.onload = function() {
+    var floatingText = document.getElementById("floatingText");
+    floatingText.style.display = "block";
+  };
+</script>
+</head>
+<body>
+
+<!-- Floating text element -->
+<div id="floatingText" class="floating-text">
+  HELLO VIENA!!
+</div>
+
+</body>
+</html>
